@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="text-center">Mr. Cocktail</h1>
+  <p class="text-center">----------------------------------</p>
+  <div class="row">
+    <div class="col-2">
+      <p>Name</p>
+    </div>
+  </div>
+
+  <% @cocktails.each do |cocktail| %>
+    <div class="row">
+      <div class="col-10">
+        <td><%= cocktail.name %></td>
+      </div>
+    </div>
+  <% end %>
+</div>
